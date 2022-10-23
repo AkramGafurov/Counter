@@ -6,6 +6,6 @@ export const Button = (props: ButtonTypes) => {
         props.callBack()
     }
     return (
-        <button onClick = {()=>{onClickHandler()}}>{props.name}</button>
+        <button disabled={props.buttonStatus}  className={props.className} onClick = {()=>{onClickHandler()}}>{props.name}</button>
     )
 }

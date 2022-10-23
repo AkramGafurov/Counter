@@ -15,8 +15,8 @@ function App() {
         <div>
             <div className='display'>{state}</div>
             <div className='buttonBox'>
-                <Button name='Increase' callBack={increaseNumber}/>
-                <Button name='Clear' callBack={clearNumber}/>
+                <Button buttonStatus={state === 5?true: false}  className={state === 5?'unActiveButton': ''} name='Increase' callBack={increaseNumber}/>
+                <Button buttonStatus={state === 0?true: false} className={state === 0?'unActiveButton': ''} name='Clear' callBack={clearNumber}/>
             </div>
         </div>
     );

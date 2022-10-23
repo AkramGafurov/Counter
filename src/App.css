@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+button {
+  background-color: green;
+}
+.unActiveButton {
+  background-color: red;
+}
